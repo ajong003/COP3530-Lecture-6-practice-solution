@@ -24,7 +24,7 @@ public class PostfixEvaluator {
 	public int eval(String expression) throws SyntaxErrorException {
 		// Assume that the expression is valid
 		
-		operandStack = new ListStack<Integer>();
+		operandStack = new ArrayStack2();
 		Scanner lineScanner = new Scanner(expression);
 		try {
 			while (lineScanner.hasNext()) {
